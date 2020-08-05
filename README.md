@@ -17,11 +17,19 @@ write the files to a USB drive, then mount the USB in CHUWI EOS.
 
 # Prerequisite
 
-Double check your wifi adapter is Realtek 8821CE:
+Step 1. Double check your wifi adapter is Realtek 8821CE:
 
     lspci | grep Network
 
-It should display RTL8821CE somewhere in the output.
+It should display RTL8821CE somewhere in the output.  My output:
+
+    Network controller: Realtek Semiconductor Co., Ltd. RTL8821CE 802.11ac PCIe Wireless Network Adapter
+
+Step 2. Check your EOS version.  This is my version but it may work with others, perhaps even Ubuntu:
+
+    uname -a
+
+    Linux Hero 5.3.0-53-generic #47~18.04.1-Ubuntu SMP Thu May 7 13:10:50 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 
 # Installation Instructions
 
