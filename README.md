@@ -25,7 +25,7 @@ It should display RTL8821CE somewhere in the output.
 
 # Installation Instructions
 
-1. Take care of dependent packages:
+Step 1. Take care of dependent packages:
 
     cd chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/
     sudo cp *.bin /var/cache/apt/
@@ -34,12 +34,12 @@ It should display RTL8821CE somewhere in the output.
 
 Since all dependencies have been copied to the cache, EOS does not need internet.
 
-2. Compile tomaspinho's rtl8821ce driver:
+Step 2. Compile tomaspinho's rtl8821ce driver:
  
     cd rtl8821ce
     sudo ./dkms-install.sh
 
-3. Reboot.  Hopefully the wifi is working now.  It does for me.
+Step 3. Reboot.  Hopefully the wifi is working now.  It does for me.
     
 # Github
 
