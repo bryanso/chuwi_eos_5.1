@@ -35,7 +35,7 @@ Step 2. Check your EOS version.  This is my version but it may work with others,
 
 Step 1. Take care of dependent packages:
 
-    cd chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/
+    cd chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/ if downloaded as Zip
     sudo cp *.bin /var/cache/apt/
     sudo cp archives/* /var/cache/apt/archives/
     sudo apt install dkms build-essential         
