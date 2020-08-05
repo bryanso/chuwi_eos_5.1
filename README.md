@@ -17,19 +17,20 @@ Prerequisite, double check your wifi adapter is Realtek 8821CE:
 
     lspci | grep Network
 
-    It should display rtl8821ce somewhere in the output.
+It should display RTL8821CE somewhere in the output.
 
-First, let's take care of dependency:
+First, let's take care of dependent packages:
 
-    cd chuwi_eos_5.1/archives
-    sudo cp * /var/cache/apt/archives/
+    cd chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/
+    sudo cp *.bin /var/cache/apt/
+    sudo cp archives/* /var/cache/apt/archives/
     sudo apt install dkms build-essential         
 
-    Since all dependencies have been copied to the cache, EOS does not need internet.
+Since all dependencies have been copied to the cache, EOS does not need internet.
 
 Next, compile tomaspinho's driver:
  
-    cd ../rtl8821ce
+    cd rtl8821ce
     sudo ./dkms-install.sh
 
 Finally, reboot.  Hopefully the wifi is working now.  It does for me.
