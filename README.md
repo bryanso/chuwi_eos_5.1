@@ -50,3 +50,16 @@ Step 3. Reboot.  Hopefully the wifi is working now.  It does for me.
 # Github
 
 https://github.com/bryanso/chuwi_eos_5.1.git
+
+# Appendix
+
+The .deb packages in the archives directory were prepared by first
+installing EOS in VirtualBox in an iMac.  Then the following command
+was used to download the packages:
+
+    sudo apt install --download-only dkms build-essential
+
+You can also do this in the Windows 10 dual boot O/S. That is, boot 
+up Windows 10, install VirtualBox, download EOS iso file, spin up
+an EOS VM, do the apt download.  Then everything can be done with the 
+one CHUWI HeroBook.
