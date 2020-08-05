@@ -35,16 +35,14 @@ Step 2. Check your EOS version.  This is my version but it may work with others,
 
 Step 1. Take care of dependent packages:
 
-    cd chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/ if downloaded as Zip
-    sudo cp *.bin /var/cache/apt/
+    cd ~/chuwi_eos_5.1/     # could be chuwi_eos_5.1-master/ if downloaded as Zip
     sudo cp archives/* /var/cache/apt/archives/
-    sudo apt install dkms build-essential         
-
-Since all dependencies have been copied to the cache, EOS does not need internet.
+    cd /var/cache/apt/archives/
+    sudo dpkg -i *.deb
 
 Step 2. Compile tomaspinho's rtl8821ce driver:
  
-    cd rtl8821ce
+    cd ~/chuwi_eos_5.1/rtl8821ce
     sudo ./dkms-install.sh
 
 Step 3. Reboot.  Hopefully the wifi is working now.  It does for me.
