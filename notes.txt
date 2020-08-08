@@ -5,3 +5,4 @@
 * Mint - No wifi
 * Zorin - No wifi
 * Porteus - write to USB from windows.  Sinply copy and run boot/porteus...windows.exe.  No wifi
+* Slackware - USB unable to boot
