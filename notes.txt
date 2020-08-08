@@ -1,0 +1,6 @@
+# Trying other Linux distros in Chuwi HeroBook Pro
+
+* Slax - can't get USB to boot.  Same USB can boot in MacMini, so not a USB setup problem.
+* CentOS 8.1 - Touchpad doesn't move pointer; no wifi
+* Mint - No wifi
+* Zorin - No wifi
